@@ -1,42 +1,465 @@
 {
-  "Action": {
-    "0": {
-      "vtype": "s5",
-      "class": "s6",
-      "$": "r4"
-    },
-    "1": {
-      "$": "accept"
-    },
-    "2": {
-      "vtype": "s5",
-      "class": "s6",
-      "$": "r4"
-    },
-    "3": {
-      "vtype": "s5",
-      "class": "s6",
-      "$": "r4"
-    },
-    "4": {
-      "vtype": "s5",
-      "class": "s6",
-      "$": "r4"
-    },
-    "5": {
-      "id": "s10"
-    },
-    "6": {
-      "id": "s12"
-    },
-    "7": {
-      "$": "r1"
-    },
-    "8": {
-      "$": "r2"
-    },
-    "9": {
-      "$": "r3"
-    }
+  "0": {
+    "vtype": "s5",
+    "class": "s6",
+    "$": "r4",
+    "CODE": 1,
+    "VDECL": 2,
+    "FDECL": 3,
+    "CDECL": 4
+  },
+  "1": {
+    "$": "acc"
+  },
+  "2": {
+    "vtype": "s5",
+    "class": "s6",
+    "$": "r4",
+    "CODE": 7,
+    "VDECL": 2,
+    "FDECL": 3,
+    "CDECL": 4
+  },
+  "3": {
+    "vtype": "s5",
+    "class": "s6",
+    "$": "r4",
+    "CODE": 8,
+    "VDECL": 2,
+    "FDECL": 3,
+    "CDECL": 4
+  },
+  "4": {
+    "vtype": "s5",
+    "class": "s6",
+    "$": "r4",
+    "CODE": 9,
+    "VDECL": 2,
+    "FDECL": 3,
+    "CDECL": 4
+  },
+  "5": {
+    "id": "s10",
+    "ASSIGN": 11
+  },
+  "6": {
+    "id": "s12"
+  },
+  "7": {
+    "$": "r1"
+  },
+  "8": {
+    "$": "r2"
+  },
+  "9": {
+    "$": "r3"
+  },
+  "10": {
+    "semi": "s13",
+    "assign": "s15",
+    "lparen": "s14"
+  },
+  "11": {
+    "semi": "s16"
+  },
+  "12": {
+    "lbrace": "s17"
+  },
+  "13": {
+    "vtype": "r5",
+    "id": "r5",
+    "rbrace": "r5",
+    "if": "r5",
+    "while": "r5",
+    "return": "r5",
+    "class": "r5",
+    "$": "r5"
+  },
+  "14": {
+    "vtype": "s19",
+    "rparen": "r21",
+    "ARG": 18
+  },
+  "15": {
+    "id": "s28",
+    "literal": "s22",
+    "character": "s23",
+    "boolstr": "s24",
+    "lparen": "s27",
+    "num": "s29",
+    "RHS": 20,
+    "EXPR": 21,
+    "EXPR_M": 25,
+    "EXPR_I": 26
+  },
+  "16": {
+    "vtype": "r6",
+    "id": "r6",
+    "rbrace": "r6",
+    "if": "r6",
+    "while": "r6",
+    "return": "r6",
+    "class": "r6",
+    "$": "r6"
+  },
+  "17": {
+    "vtype": "s5",
+    "rbrace": "r39",
+    "VDECL": 31,
+    "FDECL": 32,
+    "ODECL": 30
+  },
+  "18": {
+    "rparen": "s33"
+  },
+  "19": {
+    "id": "s34"
+  },
+  "20": {
+    "semi": "r7"
+  },
+  "21": {
+    "semi": "r8"
+  },
+  "22": {
+    "semi": "r9"
+  },
+  "23": {
+    "semi": "r10"
+  },
+  "24": {
+    "semi": "r11"
+  },
+  "25": {
+    "semi": "r13",
+    "addsub": "s35",
+    "rparen": "r13"
+  },
+  "26": {
+    "semi": "r15",
+    "addsub": "r15",
+    "multdiv": "s36",
+    "rparen": "r15"
+  },
+  "27": {
+    "id": "s28",
+    "lparen": "s27",
+    "num": "s29",
+    "EXPR": 37,
+    "EXPR_M": 25,
+    "EXPR_I": 26
+  },
+  "28": {
+    "semi": "r17",
+    "addsub": "r17",
+    "multdiv": "r17",
+    "rparen": "r17"
+  },
+  "29": {
+    "semi": "r18",
+    "addsub": "r18",
+    "multdiv": "r18",
+    "rparen": "r18"
+  },
+  "30": {
+    "rbrace": "s38"
+  },
+  "31": {
+    "vtype": "s5",
+    "rbrace": "r39",
+    "VDECL": 31,
+    "FDECL": 32,
+    "ODECL": 39
+  },
+  "32": {
+    "vtype": "s5",
+    "rbrace": "r39",
+    "VDECL": 31,
+    "FDECL": 32,
+    "ODECL": 40
+  },
+  "33": {
+    "lbrace": "s41"
+  },
+  "34": {
+    "rparen": "r23",
+    "comma": "s43",
+    "MOREARGS": 42
+  },
+  "35": {
+    "id": "s28",
+    "lparen": "s27",
+    "num": "s29",
+    "EXPR": 44,
+    "EXPR_M": 25,
+    "EXPR_I": 26
+  },
+  "36": {
+    "id": "s28",
+    "lparen": "s27",
+    "num": "s29",
+    "EXPR_M": 45,
+    "EXPR_I": 26
+  },
+  "37": {
+    "rparen": "s46"
+  },
+  "38": {
+    "vtype": "r36",
+    "class": "r36",
+    "$": "r36"
+  },
+  "39": {
+    "rbrace": "r37"
+  },
+  "40": {
+    "rbrace": "r38"
+  },
+  "41": {
+    "vtype": "s53",
+    "id": "s54",
+    "rbrace": "r25",
+    "if": "s51",
+    "while": "s52",
+    "return": "r25",
+    "VDECL": 49,
+    "ASSIGN": 50,
+    "BLOCK": 47,
+    "STMT": 48
+  },
+  "42": {
+    "rparen": "r20"
+  },
+  "43": {
+    "vtype": "s55"
+  },
+  "44": {
+    "semi": "r12",
+    "rparen": "r12"
+  },
+  "45": {
+    "semi": "r14",
+    "addsub": "r14",
+    "rparen": "r14"
+  },
+  "46": {
+    "semi": "r16",
+    "addsub": "r16",
+    "multdiv": "r16",
+    "rparen": "r16"
+  },
+  "47": {
+    "return": "s57",
+    "RETURN": 56
+  },
+  "48": {
+    "vtype": "s53",
+    "id": "s54",
+    "rbrace": "r25",
+    "if": "s51",
+    "while": "s52",
+    "return": "r25",
+    "VDECL": 49,
+    "ASSIGN": 50,
+    "BLOCK": 58,
+    "STMT": 48
+  },
+  "49": {
+    "vtype": "r26",
+    "id": "r26",
+    "rbrace": "r26",
+    "if": "r26",
+    "while": "r26",
+    "return": "r26"
+  },
+  "50": {
+    "semi": "s59"
+  },
+  "51": {
+    "lparen": "s60"
+  },
+  "52": {
+    "lparen": "s61"
+  },
+  "53": {
+    "id": "s62",
+    "ASSIGN": 11
+  },
+  "54": {
+    "assign": "s15"
+  },
+  "55": {
+    "id": "s63"
+  },
+  "56": {
+    "rbrace": "s64"
+  },
+  "57": {
+    "id": "s28",
+    "literal": "s22",
+    "character": "s23",
+    "boolstr": "s24",
+    "lparen": "s27",
+    "num": "s29",
+    "RHS": 65,
+    "EXPR": 21,
+    "EXPR_M": 25,
+    "EXPR_I": 26
+  },
+  "58": {
+    "rbrace": "r24",
+    "return": "r24"
+  },
+  "59": {
+    "vtype": "r27",
+    "id": "r27",
+    "rbrace": "r27",
+    "if": "r27",
+    "while": "r27",
+    "return": "r27"
+  },
+  "60": {
+    "boolstr": "s68",
+    "COND": 66,
+    "COND_I": 67
+  },
+  "61": {
+    "boolstr": "s68",
+    "COND": 69,
+    "COND_I": 67
+  },
+  "62": {
+    "semi": "s13",
+    "assign": "s15"
+  },
+  "63": {
+    "rparen": "r23",
+    "comma": "s43",
+    "MOREARGS": 70
+  },
+  "64": {
+    "vtype": "r19",
+    "rbrace": "r19",
+    "class": "r19",
+    "$": "r19"
+  },
+  "65": {
+    "semi": "s71"
+  },
+  "66": {
+    "rparen": "s72"
+  },
+  "67": {
+    "rparen": "r31",
+    "comp": "s73"
+  },
+  "68": {
+    "rparen": "r32",
+    "comp": "r32"
+  },
+  "69": {
+    "rparen": "s74"
+  },
+  "70": {
+    "rparen": "r22"
+  },
+  "71": {
+    "rbrace": "r35"
+  },
+  "72": {
+    "lbrace": "s75"
+  },
+  "73": {
+    "boolstr": "s68",
+    "COND": 76,
+    "COND_I": 67
+  },
+  "74": {
+    "lbrace": "s77"
+  },
+  "75": {
+    "vtype": "s53",
+    "id": "s54",
+    "rbrace": "r25",
+    "if": "s51",
+    "while": "s52",
+    "return": "r25",
+    "VDECL": 49,
+    "ASSIGN": 50,
+    "BLOCK": 78,
+    "STMT": 48
+  },
+  "76": {
+    "rparen": "r30"
+  },
+  "77": {
+    "vtype": "s53",
+    "id": "s54",
+    "rbrace": "r25",
+    "if": "s51",
+    "while": "s52",
+    "return": "r25",
+    "VDECL": 49,
+    "ASSIGN": 50,
+    "BLOCK": 79,
+    "STMT": 48
+  },
+  "78": {
+    "rbrace": "s80"
+  },
+  "79": {
+    "rbrace": "s81"
+  },
+  "80": {
+    "vtype": "r34",
+    "id": "r34",
+    "rbrace": "r34",
+    "if": "r34",
+    "while": "r34",
+    "else": "s83",
+    "return": "r34",
+    "ELSE": 82
+  },
+  "81": {
+    "vtype": "r29",
+    "id": "r29",
+    "rbrace": "r29",
+    "if": "r29",
+    "while": "r29",
+    "return": "r29"
+  },
+  "82": {
+    "vtype": "r28",
+    "id": "r28",
+    "rbrace": "r28",
+    "if": "r28",
+    "while": "r28",
+    "return": "r28"
+  },
+  "83": {
+    "lbrace": "s84"
+  },
+  "84": {
+    "vtype": "s53",
+    "id": "s54",
+    "rbrace": "r25",
+    "if": "s51",
+    "while": "s52",
+    "return": "r25",
+    "VDECL": 49,
+    "ASSIGN": 50,
+    "BLOCK": 85,
+    "STMT": 48
+  },
+  "85": {
+    "rbrace": "s86"
+  },
+  "86": {
+    "vtype": "r33",
+    "id": "r33",
+    "rbrace": "r33",
+    "if": "r33",
+    "while": "r33",
+    "return": "r33"
   }
 }
