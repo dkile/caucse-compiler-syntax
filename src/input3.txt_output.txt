@@ -1,0 +1,134 @@
+Input : class int main(){char if123='1';int 0a=a+-1;return -0;}
+<CLASS> <VTYPE,int> <IDENTIFIER,main> <LPAREN> <RPAREN> <LBRACE> <VTYPE,char> <IDENTIFIER,if123> <ASSIGNMENT> <CHAR,'1'> <SEMI> <VTYPE,int> <INTEGER,0> <IDENTIFIER,a> <ASSIGNMENT> <IDENTIFIER,a> <OPERATOR,+> <INTEGER,-1> <SEMI> <RETURN> <OPERATOR,-> <INTEGER,0> <SEMI> <RBRACE> Input : class test2 {
+    int temp(int num1, String str) {
+        int t = -1;
+        char b_b123 = 'c';
+        boolean __cc = true;
+        String d__d_0 = "Hello World";
+        char _123if = ' ';
+        int _123if0 =-1-0;
+
+        if(true) {
+            t = 3923 + 41 - -1- -1-1-1;
+            if(true){
+
+            }else{
+                int d=5;
+            }
+        }else{} if(true){
+            b_b123 = '3';
+        }else{
+            __cc=false;
+        }
+        return 0;
+    }
+
+    int function1(int num){
+        int a=3;
+        int b=4;
+        num=((a+b)*(a-b))+b;
+        b=b*(a+b);
+        while(true!=false){
+            a=a+1;
+            while(true){
+                int c=2;
+            }
+        }
+        String str1="STR";
+        return num+a*b;
+    }
+
+    String function2(String str, String str1, String str2, int num1, int num2, int num3){
+        return str;
+    }
+
+    int function3(){
+        return 0+1*-1;
+    }
+}
+
+
+<CLASS> <IDENTIFIER,test2> <LBRACE> <VTYPE,int> <IDENTIFIER,temp> <LPAREN> <VTYPE,int> <IDENTIFIER,num1> <COMMA> <VTYPE,String> <IDENTIFIER,str> <RPAREN> <LBRACE> <VTYPE,int> <IDENTIFIER,t> <ASSIGNMENT> <INTEGER,-1> <SEMI> <VTYPE,char> <IDENTIFIER,b_b123> <ASSIGNMENT> <CHAR,'c'> <SEMI> <VTYPE,boolean> <IDENTIFIER,__cc> <ASSIGNMENT> <BOOLEAN> <SEMI> <VTYPE,String> <IDENTIFIER,d__d_0> <ASSIGNMENT> <STRING,"Hello World"> <SEMI> <VTYPE,char> <IDENTIFIER,_123if> <ASSIGNMENT> <CHAR,' '> <SEMI> <VTYPE,int> <IDENTIFIER,_123if0> <ASSIGNMENT> <INTEGER,-1> <OPERATOR,-> <INTEGER,0> <SEMI> <IF> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <IDENTIFIER,t> <ASSIGNMENT> <INTEGER,3923> <OPERATOR,+> <INTEGER,41> <OPERATOR,-> <INTEGER,-1> <OPERATOR,-> <INTEGER,-1> <OPERATOR,-> <INTEGER,1> <OPERATOR,-> <INTEGER,1> <SEMI> <IF> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <RBRACE> <ELSE> <LBRACE> <VTYPE,int> <IDENTIFIER,d> <ASSIGNMENT> <INTEGER,5> <SEMI> <RBRACE> <RBRACE> <ELSE> <LBRACE> <RBRACE> <IF> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <IDENTIFIER,b_b123> <ASSIGNMENT> <CHAR,'3'> <SEMI> <RBRACE> <ELSE> <LBRACE> <IDENTIFIER,__cc> <ASSIGNMENT> <BOOLEAN> <SEMI> <RBRACE> <RETURN> <INTEGER,0> <SEMI> <RBRACE> <VTYPE,int> <IDENTIFIER,function1> <LPAREN> <VTYPE,int> <IDENTIFIER,num> <RPAREN> <LBRACE> <VTYPE,int> <IDENTIFIER,a> <ASSIGNMENT> <INTEGER,3> <SEMI> <VTYPE,int> <IDENTIFIER,b> <ASSIGNMENT> <INTEGER,4> <SEMI> <IDENTIFIER,num> <ASSIGNMENT> <LPAREN> <LPAREN> <IDENTIFIER,a> <OPERATOR,+> <IDENTIFIER,b> <RPAREN> <OPERATOR,*> <LPAREN> <IDENTIFIER,a> <OPERATOR,-> <IDENTIFIER,b> <RPAREN> <RPAREN> <OPERATOR,+> <IDENTIFIER,b> <SEMI> <IDENTIFIER,b> <ASSIGNMENT> <IDENTIFIER,b> <OPERATOR,*> <LPAREN> <IDENTIFIER,a> <OPERATOR,+> <IDENTIFIER,b> <RPAREN> <SEMI> <WHILE> <LPAREN> <BOOLEAN> <COMPARISON,!=> <BOOLEAN> <RPAREN> <LBRACE> <IDENTIFIER,a> <ASSIGNMENT> <IDENTIFIER,a> <OPERATOR,+> <INTEGER,1> <SEMI> <WHILE> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <VTYPE,int> <IDENTIFIER,c> <ASSIGNMENT> <INTEGER,2> <SEMI> <RBRACE> <RBRACE> <VTYPE,String> <IDENTIFIER,str1> <ASSIGNMENT> <STRING,"STR"> <SEMI> <RETURN> <IDENTIFIER,num> <OPERATOR,+> <IDENTIFIER,a> <OPERATOR,*> <IDENTIFIER,b> <SEMI> <RBRACE> <VTYPE,String> <IDENTIFIER,function2> <LPAREN> <VTYPE,String> <IDENTIFIER,str> <COMMA> <VTYPE,String> <IDENTIFIER,str1> <COMMA> <VTYPE,String> <IDENTIFIER,str2> <COMMA> <VTYPE,int> <IDENTIFIER,num1> <COMMA> <VTYPE,int> <IDENTIFIER,num2> <COMMA> <VTYPE,int> <IDENTIFIER,num3> <RPAREN> <LBRACE> <RETURN> <IDENTIFIER,str> <SEMI> <RBRACE> <VTYPE,int> <IDENTIFIER,function3> <LPAREN> <RPAREN> <LBRACE> <RETURN> <INTEGER,0> <OPERATOR,+> <INTEGER,1> <OPERATOR,*> <INTEGER,-1> <SEMI> <RBRACE> <RBRACE> Input : class test {
+    char ch='c';
+    int cl=a+b;
+    int main(int num1, String str) {
+        int _aa_a = -1;
+        char b_b123 = 'c';
+        boolean __cc = true;
+        String d__d_0 = "Hello World";
+        char _123if = ' ';
+        int _123if0 =-1-0;
+
+        if(true) {
+            _aa_a = 3923 + 41 - -1- -1-1-1;
+        }else{
+            while(true){
+                _aa_a=_aa_a+1;
+            }
+            b_b123 = '3';
+        }
+
+        return 0;
+    }
+
+    int function(int num){
+        int a=3;
+        int b=4;
+        num=a+b;
+        return num;
+    }
+}
+class test2 {
+    int temp(int num1, String str) {
+        int t = -1;
+        char b_b123 = 'c';
+        boolean __cc = true;
+        String d__d_0 = "Hello World";
+        char _123if = ' ';
+        int _123if0 =-1-0;
+
+        if(true) {
+            t = 3923 + 41 - -1- -1-1-1;
+            if(true){
+
+            }else{
+                int d=5;
+            }
+        }else{} if(true){
+            b_b123 = '3';
+        }else{
+            __cc=false;
+        }
+        return 0;
+    }
+
+    int function1(int num){
+        int a=3;
+        int b=4;
+        num=((a+b)*(a-b))+b;
+        b=b*(a+b);
+        while(true!=false){
+            a=a+1;
+            while(true){
+                int c=2;
+            }
+        }
+        String str1="STR";
+        return num+a*b;
+    }
+
+    String function2(String str, String str1, String str2, int num1, int num2, int num3){
+        return str;
+    }
+
+    int function3(){
+        return 0+1*-1;
+    }
+}
+class test3{
+    int function4(){
+        return 0;
+    }
+    int num=-1231;
+}
+<CLASS> <IDENTIFIER,test> <LBRACE> <VTYPE,char> <IDENTIFIER,ch> <ASSIGNMENT> <CHAR,'c'> <SEMI> <VTYPE,int> <IDENTIFIER,cl> <ASSIGNMENT> <IDENTIFIER,a> <OPERATOR,+> <IDENTIFIER,b> <SEMI> <VTYPE,int> <IDENTIFIER,main> <LPAREN> <VTYPE,int> <IDENTIFIER,num1> <COMMA> <VTYPE,String> <IDENTIFIER,str> <RPAREN> <LBRACE> <VTYPE,int> <IDENTIFIER,_aa_a> <ASSIGNMENT> <INTEGER,-1> <SEMI> <VTYPE,char> <IDENTIFIER,b_b123> <ASSIGNMENT> <CHAR,'c'> <SEMI> <VTYPE,boolean> <IDENTIFIER,__cc> <ASSIGNMENT> <BOOLEAN> <SEMI> <VTYPE,String> <IDENTIFIER,d__d_0> <ASSIGNMENT> <STRING,"Hello World"> <SEMI> <VTYPE,char> <IDENTIFIER,_123if> <ASSIGNMENT> <CHAR,' '> <SEMI> <VTYPE,int> <IDENTIFIER,_123if0> <ASSIGNMENT> <INTEGER,-1> <OPERATOR,-> <INTEGER,0> <SEMI> <IF> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <IDENTIFIER,_aa_a> <ASSIGNMENT> <INTEGER,3923> <OPERATOR,+> <INTEGER,41> <OPERATOR,-> <INTEGER,-1> <OPERATOR,-> <INTEGER,-1> <OPERATOR,-> <INTEGER,1> <OPERATOR,-> <INTEGER,1> <SEMI> <RBRACE> <ELSE> <LBRACE> <WHILE> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <IDENTIFIER,_aa_a> <ASSIGNMENT> <IDENTIFIER,_aa_a> <OPERATOR,+> <INTEGER,1> <SEMI> <RBRACE> <IDENTIFIER,b_b123> <ASSIGNMENT> <CHAR,'3'> <SEMI> <RBRACE> <RETURN> <INTEGER,0> <SEMI> <RBRACE> <VTYPE,int> <IDENTIFIER,function> <LPAREN> <VTYPE,int> <IDENTIFIER,num> <RPAREN> <LBRACE> <VTYPE,int> <IDENTIFIER,a> <ASSIGNMENT> <INTEGER,3> <SEMI> <VTYPE,int> <IDENTIFIER,b> <ASSIGNMENT> <INTEGER,4> <SEMI> <IDENTIFIER,num> <ASSIGNMENT> <IDENTIFIER,a> <OPERATOR,+> <IDENTIFIER,b> <SEMI> <RETURN> <IDENTIFIER,num> <SEMI> <RBRACE> <RBRACE> <CLASS> <IDENTIFIER,test2> <LBRACE> <VTYPE,int> <IDENTIFIER,temp> <LPAREN> <VTYPE,int> <IDENTIFIER,num1> <COMMA> <VTYPE,String> <IDENTIFIER,str> <RPAREN> <LBRACE> <VTYPE,int> <IDENTIFIER,t> <ASSIGNMENT> <INTEGER,-1> <SEMI> <VTYPE,char> <IDENTIFIER,b_b123> <ASSIGNMENT> <CHAR,'c'> <SEMI> <VTYPE,boolean> <IDENTIFIER,__cc> <ASSIGNMENT> <BOOLEAN> <SEMI> <VTYPE,String> <IDENTIFIER,d__d_0> <ASSIGNMENT> <STRING,"Hello World"> <SEMI> <VTYPE,char> <IDENTIFIER,_123if> <ASSIGNMENT> <CHAR,' '> <SEMI> <VTYPE,int> <IDENTIFIER,_123if0> <ASSIGNMENT> <INTEGER,-1> <OPERATOR,-> <INTEGER,0> <SEMI> <IF> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <IDENTIFIER,t> <ASSIGNMENT> <INTEGER,3923> <OPERATOR,+> <INTEGER,41> <OPERATOR,-> <INTEGER,-1> <OPERATOR,-> <INTEGER,-1> <OPERATOR,-> <INTEGER,1> <OPERATOR,-> <INTEGER,1> <SEMI> <IF> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <RBRACE> <ELSE> <LBRACE> <VTYPE,int> <IDENTIFIER,d> <ASSIGNMENT> <INTEGER,5> <SEMI> <RBRACE> <RBRACE> <ELSE> <LBRACE> <RBRACE> <IF> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <IDENTIFIER,b_b123> <ASSIGNMENT> <CHAR,'3'> <SEMI> <RBRACE> <ELSE> <LBRACE> <IDENTIFIER,__cc> <ASSIGNMENT> <BOOLEAN> <SEMI> <RBRACE> <RETURN> <INTEGER,0> <SEMI> <RBRACE> <VTYPE,int> <IDENTIFIER,function1> <LPAREN> <VTYPE,int> <IDENTIFIER,num> <RPAREN> <LBRACE> <VTYPE,int> <IDENTIFIER,a> <ASSIGNMENT> <INTEGER,3> <SEMI> <VTYPE,int> <IDENTIFIER,b> <ASSIGNMENT> <INTEGER,4> <SEMI> <IDENTIFIER,num> <ASSIGNMENT> <LPAREN> <LPAREN> <IDENTIFIER,a> <OPERATOR,+> <IDENTIFIER,b> <RPAREN> <OPERATOR,*> <LPAREN> <IDENTIFIER,a> <OPERATOR,-> <IDENTIFIER,b> <RPAREN> <RPAREN> <OPERATOR,+> <IDENTIFIER,b> <SEMI> <IDENTIFIER,b> <ASSIGNMENT> <IDENTIFIER,b> <OPERATOR,*> <LPAREN> <IDENTIFIER,a> <OPERATOR,+> <IDENTIFIER,b> <RPAREN> <SEMI> <WHILE> <LPAREN> <BOOLEAN> <COMPARISON,!=> <BOOLEAN> <RPAREN> <LBRACE> <IDENTIFIER,a> <ASSIGNMENT> <IDENTIFIER,a> <OPERATOR,+> <INTEGER,1> <SEMI> <WHILE> <LPAREN> <BOOLEAN> <RPAREN> <LBRACE> <VTYPE,int> <IDENTIFIER,c> <ASSIGNMENT> <INTEGER,2> <SEMI> <RBRACE> <RBRACE> <VTYPE,String> <IDENTIFIER,str1> <ASSIGNMENT> <STRING,"STR"> <SEMI> <RETURN> <IDENTIFIER,num> <OPERATOR,+> <IDENTIFIER,a> <OPERATOR,*> <IDENTIFIER,b> <SEMI> <RBRACE> <VTYPE,String> <IDENTIFIER,function2> <LPAREN> <VTYPE,String> <IDENTIFIER,str> <COMMA> <VTYPE,String> <IDENTIFIER,str1> <COMMA> <VTYPE,String> <IDENTIFIER,str2> <COMMA> <VTYPE,int> <IDENTIFIER,num1> <COMMA> <VTYPE,int> <IDENTIFIER,num2> <COMMA> <VTYPE,int> <IDENTIFIER,num3> <RPAREN> <LBRACE> <RETURN> <IDENTIFIER,str> <SEMI> <RBRACE> <VTYPE,int> <IDENTIFIER,function3> <LPAREN> <RPAREN> <LBRACE> <RETURN> <INTEGER,0> <OPERATOR,+> <INTEGER,1> <OPERATOR,*> <INTEGER,-1> <SEMI> <RBRACE> <RBRACE> <CLASS> <IDENTIFIER,test3> <LBRACE> <VTYPE,int> <IDENTIFIER,function4> <LPAREN> <RPAREN> <LBRACE> <RETURN> <INTEGER,0> <SEMI> <RBRACE> <VTYPE,int> <IDENTIFIER,num> <ASSIGNMENT> <INTEGER,-1231> <SEMI> <RBRACE> 
