@@ -41,7 +41,7 @@ public class InputOptimizer {
         return null;
     }
 
-    public String[] inputOptimize(String fileName) {
+    public String[] inputOptimize(String fileName) {    //Output을 Syntax Input 형식에 맞게 가공
         String[] tokens;
         String[] token;
         String terminal;
@@ -51,14 +51,13 @@ public class InputOptimizer {
         
         if (input.contains("Error"))
             return null;
-        
-        input = input.replace("<", "");
-        input = input.replace(">", "");
         tokens = input.split(" ");
 
         for (int i = 0; i < tokens.length; i++) {
-            token = tokens[i].split(",");
-            if (token[0].equals("OPERATOR")) {
+            //System.out.println("Tokens"+i+" : "+tokens[i]);
+            
+            token = tokens[i].split(",");   //“,”를 기준으로 token name과 value 인식
+            if (token[0].equals("OPERATOR")) {  //operator의 경우 value를 따로 구별해준다.
                 JSONObject temp = (JSONObject)this.table.get(token[0]);
                 terminal = String.valueOf(temp.get(token[1]));
             }
@@ -68,11 +67,14 @@ public class InputOptimizer {
                     continue;
                 }
             }
-            tokens[flag] = terminal;
+            tokens[flag] = terminal;    //인식한 토큰을 Tokens에 하나씩 저장
             flag++;
         }
         tokens = Arrays.copyOf(tokens, flag + 1);
         tokens[flag] = "$";
+        for(String el: tokens) {
+            System.out.println(el);
+        }
         return tokens;
     }
 }

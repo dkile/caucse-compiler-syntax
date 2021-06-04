@@ -6,8 +6,8 @@ public class LAnalyzer {
 
     public static void main(String[] args) {
 
-        ParseTable pt = new ParseTable();
-        DFA[] dfa = new DFA[NUM_OF_TOKEN];
+        ParseTable pt = new ParseTable(); 
+        DFA[] dfa = new DFA[NUM_OF_TOKEN];   //Json 형식의 dfa를 파싱                       
         SyntaxAnalyzer sa = new SyntaxAnalyzer();
 
         FileParser fileParser = new FileParser();
@@ -26,8 +26,8 @@ public class LAnalyzer {
             dfa[i] = new DFA(pt.splitTable(i));
             dfa[i].resetDFA();
         }
-
         for (String fileName : args) {
+
             inputText = fileParser.parseInput(fileName);
             outputText += ("Input : " + inputText + "\n");
             startPos = 0;
@@ -49,11 +49,11 @@ public class LAnalyzer {
                         
                         if(input.equals("-") && T==11 && i==startPos) {
                         }
-                        if(!dfa[T].getNextState(input)) {     //c_state에 차례대로 symbol을 삽입.
-                            dfa[T].resetDFA();                    //해당 DFA가 끝났을때 (or 문장이 끝났을 때)
-                            if(isFinish) {
-                                // System.out.println(input+", "+i+", "+startPos);                        //Token으로 성립했다면
-                                checkToken[T] = i-startPos;  //Token의 길이 저장
+                        if(!dfa[T].getNextState(input)) {          //c_state에 차례대로 symbol을 삽입.
+                            dfa[T].resetDFA();                     //해당 DFA가 끝났을때 (or 문장이 끝났을 때)
+                            if(isFinish) {                         //Token으로 성립했다면
+                                // System.out.println(input+", "+i+", "+startPos); 
+                                checkToken[T] = i-startPos;        //Token의 길이 저장
                             }
                             break;
                         }
@@ -70,7 +70,7 @@ public class LAnalyzer {
                         index = i;
                     }
                 }
-                if( index == -1) {                      //어떤 DFA도 추출되지 않았다면 오류
+                if( index == -1) {                     //어떤 DFA도 추출되지 않았다면 오류
                     outputText += ("Lexical Error Occured!!");
                     break;
                 }
@@ -81,16 +81,16 @@ public class LAnalyzer {
                     if(finalToken.equals(dfa[8].getName()) || finalToken.equals(dfa[9].getName()) ||
                     finalToken.equals(dfa[10].getName()) || finalToken.equals(dfa[11].getName()) || 
                     finalToken.equals(dfa[13].getName()) || finalToken.equals(dfa[20].getName()) || finalToken.equals(dfa[21].getName()))
-                        outputText += ("<"+finalToken+","+finalOutput+"> ");
+                        outputText += (finalToken+","+finalOutput+" ");
                     else
-                        outputText += ("<"+finalToken+"> ");    
+                        outputText += (finalToken+" ");    
                 }
                 startPos += max;
             }
-            fileParser.parseOutput(fileName, outputText);
+            fileParser.parseOutput(fileName, outputText);   //Lexical의 Output을 Syntax Analyzer로 토스
 
-            System.out.println("Syntax Analyze about " + fileName);
-            sa.syntaxAnalyze(fileName);
+            System.out.println("Syntax Analyze about " + fileName); 
+            sa.syntaxAnalyze(fileName);    
         }
     }
 }

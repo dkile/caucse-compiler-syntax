@@ -1,0 +1,1 @@
+class main{char if123='1';int a=a+-1;char abc(){iden=true; return 0;}}

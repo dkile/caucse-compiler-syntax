@@ -10,7 +10,7 @@ public class FileParser {
              //버퍼 선언
              byte[ ] readBuffer = new byte[fs.available()];
              while (fs.read( readBuffer ) != -1){
-                //  System.out.println("Buffer is " + readBuffer);
+                  System.out.println("Buffer is " + readBuffer);
              }
              fs.close(); //스트림 닫기
              return (new String(readBuffer)); //출력

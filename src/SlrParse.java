@@ -31,9 +31,9 @@ public class SlrParse {
         int pop_count = 0;
         JSONObject rules;
         for (int i = 0; i < tokens.length;) {
-            rules = (JSONObject)parseTable.get(stack.peek());
+            rules = (JSONObject)parseTable.get(stack.peek());   //현재상태 테이블 로딩
             //System.out.println("stack top: " + stack.peek());
-            rule = (String)rules.get(tokens[i]);
+            rule = (String)rules.get(tokens[i]);    //다음 액션 로딩
             //System.out.println("token: " + tokens[i]);
             if (rule == null) {
                 System.out.println("No rule for "+i+"th "+"token - "+tokens[i]);
@@ -41,19 +41,19 @@ public class SlrParse {
             }
             else if (rule.equals("acc"))
                 return true;
-            else if (rule.charAt(0) == 's') {
+            else if (rule.charAt(0) == 's') {   //action - shift
                 rule_num = rule.substring(1);
                 //System.out.println("Shift to " + rule_num);
                 stack.push(tokens[i]);
                 stack.push(rule_num);
                 i++;
             }
-            else if (rule.charAt(0) == 'r') {
-                reduce = (String)ruleTable.get(rule);
+            else if (rule.charAt(0) == 'r') {   //action -reduce
+                reduce = (String)ruleTable.get(rule);   //rule Table 로딩
                 //System.out.println("reduce rule: " + reduce);
                 String[] temp = reduce.split(" ");
                 pop_count = Integer.parseInt(temp[1]);
-                for (int j= 0; j < pop_count; j++) {
+                for (int j= 0; j < pop_count; j++) {    //불러온 글자 수만큼 pop&reduce
                     //System.out.println("popping: " + stack.peek());
                     stack.pop();
                 }
