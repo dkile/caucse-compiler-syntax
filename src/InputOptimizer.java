@@ -72,9 +72,6 @@ public class InputOptimizer {
         }
         tokens = Arrays.copyOf(tokens, flag + 1);
         tokens[flag] = "$";
-        for(String el: tokens) {
-            System.out.println(el);
-        }
         return tokens;
     }
 }
